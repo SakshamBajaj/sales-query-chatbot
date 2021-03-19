@@ -1,0 +1,460 @@
+version: "2.0"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: false
+intents:
+- store_rank_by_metric
+- metric_value
+- faq
+entities:
+- CP_or_Non_CP
+- LFL_or_Non_LFL
+- territory
+- brands
+- calculated_metric
+- concepts
+- get_command
+- metric
+- rank_command
+- region
+- sub_region
+- store_number
+- store_subtype
+- store_type
+- superlative
+- time
+- year_extract
+- filters_name
+- concepts_name
+- territory_name
+- brands_name
+- LFL_name
+- CP_name
+- region_name
+- sub-region_name
+- store_type_name
+- store_sub-type_name
+- metric_name
+- calculated_metric_name
+- dates_name
+
+
+slots:
+  CP_or_Non_CP:
+    type: categorical
+    influence_conversation: false
+    values:
+    - cp
+    - non-cp
+    - __other__
+  LFL_or_Non_LFL:
+    type: categorical
+    influence_conversation: false
+    values:
+    - lfl
+    - non-lfl
+    - __other__
+  brands:
+    type: list
+    influence_conversation: false
+  calculated_metric:
+    type: categorical
+    influence_conversation: false
+    values:
+    - psf
+    - budget achievement
+    - __other__
+  concepts:
+    type: list
+    influence_conversation: false
+  date_range:
+    type: any
+    influence_conversation: false
+  growth_command:
+    type: text
+    influence_conversation: false
+  metric:
+    type: text
+    influence_conversation: false
+  number_of_stores:
+    type: any
+    influence_conversation: false
+  region:
+    type: list
+    influence_conversation: false
+  requested_slot:
+    type: text
+    influence_conversation: false
+  store_subtype:
+    type: list
+    influence_conversation: false
+  store_type:
+    type: list
+    influence_conversation: false
+  sub_region:
+    type: list
+    influence_conversation: false
+  superlative:
+    type: text
+    influence_conversation: false
+  territory:
+    type: list
+    influence_conversation: false
+  trigger_intent:
+    type: categorical
+    influence_conversation: false
+    values:
+    - metric_value
+    - store_rank_by_metric
+    - __other__
+responses:
+  utter_faq:
+  - text: Did not understand your FAQ. 
+
+  utter_faq/filters_info:
+  - text: >- 
+      You can filter queries on any combination of these categories:
+        - Concepts
+        - Brands
+        - Territories
+        - Regions
+        - Sub-regions
+        - Store Types
+        - Store sub-types
+        - LFL
+        - CP 
+        For more information on any of the filters, type: info on {filter name} 
+  
+  utter_faq/concepts_info:
+  - text: >-
+      Here is a list of recognized concepts:
+        - Homecentre
+        - Emax
+        - Max
+        - Splash
+        - Babyshop
+        - Shoemart
+        - Shoemart Brands
+        - Lifestyle
+        - Shoexpress
+        - Home Box
+        - LMI Brands
+        - SportsOne
+  utter_faq/territory_info:
+  - text: >-
+      Here is a list of recognized territories: 
+        - KSA
+        - UAE
+        - Egypt
+        - Qatar
+        - Oman
+        - Kuwait
+        - Lebanon
+        - Jordan
+        - Bahrain
+  utter_faq/brands_info:
+  - text: >-
+      Here is a list of recognized brands:
+        - Ecco
+        - Lipsy
+        - Adidas
+        - New Look
+        - Steve Madden
+        - Pablosky
+        - Le Confort
+        - Carpisa
+        - Lee Cooper
+        - Bossini
+        - Styli
+        - Kurt Geiger
+        - Miriade
+        - Aerosoles
+        - Namshi
+        - Noon
+        - Koton
+        - Nisnass
+        - Unbranded
+        - Jollychic
+        - Clearance
+        - Lifestyle Noon
+  utter_faq/LFL_info:
+  - text: >-
+      You can filter stores by whether they are LFL (Like For Like) or Non-LFL.
+      A LFL store is one that was opened before July 1st of the current year.
+  
+  utter_faq/CP_info:
+  - text: >-
+      You can filter queries by whether the sales happened in CP (Centrepoint) or Non-CP (outside Centrepoint)
+
+  utter_faq/region_info:
+  - text: >-
+      Here is a list of recognized regions:
+        - Riyadh
+        - Dammam
+        - Jeddah
+
+        - Abu Dhabi
+        - Al Ain
+        - Dubai
+        - Sharjah
+        - Ajman
+        - Ras Al Khaimah
+        - Fujairah
+        - Umm Al Quwain
+
+        - Abha
+        - Doha
+        - Buraidha
+        
+        - Muscat
+        - Al Farwaniyah
+        - Irbid
+        - Kuwait City
+        - Al Manama
+        - Al-batinah
+        - Al Wakrah
+        - Mount Lebanon
+        - Cairo
+        - Alexandria
+        - Ash-sharqiyah
+        - Others
+        - South Lebanon
+        - Al Wusta
+        - Al Ahmadi
+        - Amman
+        - Al Rayyan
+        - Hawally
+        - Dhahirah
+        - Dhakilyah
+        - Dhofar
+        - Al Muharraq
+        - North Lebanon
+        - others
+        - Al Khor
+        - Al-zarqa
+        - Ibri
+        - Gharbia
+        - Fahaheel
+        - Others_kuwait
+        - Ad-dakhiliyah
+
+  utter_faq/sub-region_info:
+  - text: >-
+      Here is a list of recognized sub-regions:
+        - Riyadh
+        - Abqaiq
+        - Abu Dhabi
+        - Dubai
+        - Abu Arish
+        - Ajman
+        - Al Ain
+        - Jeddah
+        - Doha
+        - Al Bahah
+        - Al Bukayriyah
+        - Dawadimi
+        - Sharjah
+        - Hofuf
+        - Yanbu Al Khurik
+        - Al Jouf
+        - Muscat
+        - Medina
+        - Ar Rass
+        - Makkah
+        - Az Zulfi
+        - Alexandria
+        - Al Farwaniyah
+        - Irbid
+        - Ar'ar
+        - Kuwait City
+        - Unayzah
+        - Najran
+        - Al Manama
+        - Baljurshi
+        - Al-batinah
+        - Al Wakrah
+        - Mount Lebanon
+        - Ras Al Khaimah
+        - Bisha
+        - Cairo
+        - Buraydah
+        - Others
+        - Ash-sharqiyah
+        - Al Qatif
+        - Al Kharj
+        - Tabuk
+        - Khobar
+        - Abha
+        - Dammam
+        - nan
+        - South Lebanon
+        - Al Wusta
+        - Al Ahmadi
+        - Fujairah
+        - Jubail
+        - Amman
+        - Ha'il
+        - Al Rayyan
+        - Hafr Al Batin
+        - Hawally
+        - Ibri
+        - Al Jahra
+        - Jizan
+        - Taif
+        - Khafji
+        - Khamis Mushayt
+        - Al Majardah
+        - Al Majma'ah
+        - Mhayel
+        - Nairyah
+        - Ad-dakhiliyah
+        - Dhofar
+        - Al Muharraq
+        - Qurayyat
+        - Rafhah
+        - Ras Tanura
+        - Sabya
+        - Salalah
+        - Sarat Abidah
+        - Sharurah
+        - Shaqra
+        - Beirut
+        - North Lebanon
+        - Umm Al Quwain
+        - Wadi Al-dawasir
+        - Muaither
+        - Murraikah
+        - Al Khor
+        - Al-zarqa
+        - Buraidha
+        - others
+        - Tubarjal
+        - Al Qunfudhah
+        - Rabigh
+        - Samtah
+        - Sabt Alalayah
+
+  utter_faq/store_type_info:
+  - text: >-
+      Here is a list of recognized store types:
+        - Brick and Mortar (B&M)
+        - E-commerce
+
+  utter_faq/store_sub-type_info:
+  - text: >-
+      Here is a list of recognized store subtypes:
+        - Mall
+        - Clearance
+        - Standalone
+        - Ecomm
+        - Kiosk
+        - SIS
+        - Ecomm 3rd Party
+
+  utter_faq/metric_info:
+  - text: >-
+      Queries are based on 4 metrics: Sales, COGS, Gross Margin and Gross Profit.
+      Further, growth, budget achievement and metric per day per squarefoot can be calculated for any of these metrics.
+  
+  utter_faq/dates_info:
+  - text: >-
+      Data begins from 1st July 2017. 
+      Any query currently must have a date range within the financial year (July-July) 
+  
+  utter_ask_metric:
+  - text: For which metric would you like this data?
+    buttons:
+    - payload: Sales Value
+      title: Sales Value
+    - payload: COGS
+      title: COGS
+    - payload: Gross Margin
+      title: Gross Margin
+    - payload: Gross Profit
+      title: Gross Profit
+    
+  - custom:
+      type: message
+      attachments:
+        - contentType: application/vnd.microsoft.card.adaptive
+          content:
+            type: AdaptiveCard
+            version: 1.3
+            title: Metric Input
+            body:
+              - type: TextBlock
+                id: text
+                text: For which metric would you like this data (Please Type)?
+              - type: Input.ChoiceSet
+                id: choices
+                style: expanded
+                choices:
+                  - value: Sales Value
+                    title: Sales Value
+                  - value: Budgeted Sales Value
+                    title: Budgeted Sales Value
+                  - value: COGS
+                    title: COGS
+                  - value: Budgeted COGS
+                    title: Budgeted COGS
+                  - value: Gross Margin
+                    title: Gross Margin
+                  - value: Budgeted Gross Margin
+                    title: Budgeted Gross Margin
+                  - value: Gross Profit
+                    title: Gross Profit
+                  - value: Budgeted Gross Profit
+                    title: Budgeted Gross Profit
+    channel: botframework
+
+  utter_ask_date_range:
+  - text: Over what dates would you like this data?
+
+  utter_ask_number_of_stores:
+  - text: How many stores (upto 15) would you like ranked?
+        
+actions:
+- action_submit_get_metric_form
+- validate_get_metric_form
+forms:
+  get_metric_form:
+    CP_or_Non_CP:
+    - entity: CP_or_Non_CP
+      type: from_entity
+    LFL_or_Non_LFL:
+    - entity: LFL_or_Non_LFL
+      type: from_entity
+    brands:
+    - entity: brands
+      type: from_entity
+    calculated_metric:
+    - entity: calculated_metric
+      type: from_entity
+    concepts:
+    - entity: concepts
+      type: from_entity
+    metric:
+    - entity: metric
+      type: from_entity
+    region:
+    - entity: region
+      type: from_entity
+    store_subtype:
+    - entity: store_subtype
+      type: from_entity
+    store_type:
+    - entity: store_type
+      type: from_entity
+    sub_region:
+    - entity: sub_region
+      type: from_entity
+    superlative:
+    - entity: superlative
+      intent: store_rank_by_metric
+      not_intent:
+      - metric_value
+      type: from_entity
+    territory:
+    - entity: territory
+      type: from_entity

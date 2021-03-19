@@ -1,0 +1,36 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+
+pipeline:
+   - name: WhitespaceTokenizer
+   - name: RegexFeaturizer
+   - name: LexicalSyntacticFeaturizer
+   - name: CountVectorsFeaturizer
+   - name: CountVectorsFeaturizer
+     analyzer: char_wb
+     min_ngram: 1
+     max_ngram: 4
+   - name: DIETClassifier
+     epochs: 100
+     entity_recognition: False
+   - name: RegexEntityExtractor
+   - name: EntitySynonymMapper
+   - name: DucklingEntityExtractor
+     url: "http://localhost:8000"
+     dimensions: ["time"]
+     timezone: "Asia/Dubai"
+   - name: ResponseSelector
+     epochs: 100
+   - name: FallbackClassifier
+     threshold: 0.3
+     ambiguity_threshold: 0.1
+
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+
+   - name: MemoizationPolicy
+   - name: RulePolicy
+

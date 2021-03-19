@@ -1,0 +1,54 @@
+version: "2.0"
+nlu:
+- intent: metric_value
+  examples: |
+    - [cogs]{"entity": "metric", "value": "COGS"}[cogs]{"entity": "metric", "value": "COGS"} for [converse]{"entity": "concepts", "value": "converse"} [uae]{"entity": "Territory", "value": "UAE"}[uae]{"entity": "Territory", "value": "UAE"} [last]{"entity": "superlative", "value": "worst"} march
+    - [sales]{"entity": "metric", "value": "Sales Value"} for [puma]{"entity": "concepts", "value": "puma"} [bah]{"entity": "Territory", "value": "BAHRAIN"} [last]{"entity": "superlative", "value": "worst"} feb
+    - [gross margin]{"entity": "metric", "value": "Gross Margin"} for [adidas]{"entity": "concepts", "value": "adidas"} [ksa]{"entity": "Territory", "value": "KSA"}
+    - last jan
+    - [nike]{"entity": "concepts", "value": "Nike"} [oman]{"entity": "Territory", "value": "OMAN"}
+    - [Sales Value](metric)
+- intent: store_rank_by_metric
+  examples: |
+    - dec 2018
+    - rank [egypt]{"entity": "Territory", "value": "EGYPT"} [nike](concepts) stores by [sales]{"entity": "metric", "value": "Sales Value"}
+    - rank [best](superlative) 10 [adidas]{"entity": "concepts", "value": "adidas"} stores [uae]{"entity": "Territory", "value": "UAE"} for last year
+    - rank [best](superlative) [10](store_number) stores for [adidas]{"entity": "concepts", "value": "adidas"} [uae]{"entity": "Territory", "value": "UAE"} last year by [sales]{"entity": "metric", "value": "Sales Value"}
+- synonym: COGS
+  examples: |
+    - cogs
+
+- synonym: UAE
+  examples: |
+    - uae
+- synonym: worst
+  examples: |
+    - last
+- synonym: Sales Value
+  examples: |
+    - sales
+- synonym: puma
+  examples: |
+    - puma
+- synonym: BAHRAIN
+  examples: |
+    - bah
+- synonym: Gross Margin
+  examples: |
+    - gross margin
+- synonym: adidas
+  examples: |
+    - adidas
+- synonym: KSA
+  examples: |
+    - ksa
+- synonym: Nike
+  examples: |
+    - bs
+- synonym: OMAN
+  examples: |
+    - oman
+- synonym: EGYPT
+  examples: |
+    - egypt
+

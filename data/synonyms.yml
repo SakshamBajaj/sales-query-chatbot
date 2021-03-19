@@ -1,0 +1,290 @@
+version: "2.0"
+nlu:
+- synonym: Adidas
+  examples: |
+    - ADIDAS
+    - adidas
+- synonym: Aerosoles
+  examples: |
+    - Aerosoles
+    - soles
+
+
+
+#Metric Synonyms
+- synonym: Budget Date of Sale
+  examples: |
+    - Budgeted Date of Sale
+    - budgeted date
+- synonym: Budgeted COGS
+  examples: |
+    - budgeted cogs
+    - budgeted cost of goods sold
+    - projected COGS
+    - projected cost of goods sold
+- synonym: Budgeted Gross Margin
+  examples: |
+    - Budgeted gm
+    - budgeted gross margin
+    - projected gm
+    - projected gross margin
+- synonym: Budgeted Sales
+  examples: |
+    - budgeted sales
+    - budgeted revenue
+    - budgeted total sales
+    - projected sales
+    - projected revenue
+    - projected total sales
+- synonym: COGS
+  examples: |
+    - Cost of Goods Sold
+    - Cost
+    - cogs
+- synonym: Gross Margin
+  examples: |
+    - gross margin
+    - gross margins
+    - margin
+    - margins
+    - gm
+
+- synonym: Sales Qty
+  examples: |
+    - sales quantity
+    - quantity sold
+- synonym: Sales Value
+  examples: |
+    - sales value
+    - sales
+    - total sales
+    - sales revenue
+    - total sales revenue
+    - revenue
+
+- synonym: Gross Profit
+  examples: |
+    - GP
+    - gp
+    - gross profit
+    - profit
+
+#calculated_metric
+- synonym: Budget Achievement
+  examples: |
+    - budget achievement
+    - achievement
+    - achieved
+    - achieve
+    - attained
+
+
+- synonym: PSF
+  examples: |
+    - psf
+    - per day per sqft
+    - per day per squarefeet
+    - for every day for each sqft
+    
+#Territory Synonyms
+- synonym: KSA
+  examples: |
+    - Saudi Arabia
+    - Kingdom of Saudi Arabia
+    - Saudi
+    - saudi
+    - ksa
+
+- synonym: UAE
+  examples: |
+    - United Arab Emirates
+    - Emirates
+    - U.A.E.
+    - uae
+
+- synonym: EGYPT
+  examples: |
+    - Egypt
+    - Egy
+    - egypt
+    - egy
+
+- synonym: QATAR
+  examples: |
+    - Qatar
+    - Qat
+    - qatar
+    - qat
+
+- synonym: OMAN
+  examples: |
+    - Oman
+    - Oma
+    - oma
+    - oman
+
+- synonym: KUWAIT
+  examples: |
+    - Kuwait
+    - kuwait
+    - kuw
+
+- synonym: LEBANON
+  examples: |
+    - LEBANON
+    - Lebanon
+    - Leb
+    - leb
+    - lab
+  
+- synonym: BAHRAIN
+  examples: |
+    - Bahrain
+    - Bah
+    - bah
+    - bahrain
+
+- synonym: JORDAN
+  examples: |
+    - Jordan
+    - Jor
+    - jor
+    - jord
+    - jordan
+
+    
+- synonym: Clearance
+  examples: |
+    - clearance
+- synonym: Count of Invoices
+  examples: |
+    - invoice count
+    - invoices
+    - total invoices
+- synonym: Date of Sale
+  examples: |
+    - Sale Date
+    - sales date
+
+
+- synonym: Ecomm 3rd Party
+  examples: |
+    - Ecomm 3rd Party
+    - ecommerce 3rd party
+    - 3rd party ecommerce
+    - third party ecomm
+
+
+- synonym: LFL
+  examples: |
+    - LFL
+    - Like for Like
+- synonym: LMI Brands
+  examples: |
+    - LMI Brands
+    - lmi brands
+    - LMI
+- synonym: Le Confort
+  examples: |
+    - Le Confort
+    - Confort
+
+- synonym: Mall
+  examples: |
+    - mall
+    - shopping complex
+- synonym: Max
+  examples: |
+    - max
+
+- synonym: Nisnass
+  examples: |
+    - nisnass
+- synonym: No Brand
+  examples: |
+    - No Brand
+    - unbranded
+- synonym: Non-CP
+  examples: |
+    - Non-CP
+    - not CP
+    - no CP
+    - not centrepoint
+    - not Centerpoint
+
+- synonym: Non-LFL
+  examples: |
+    - Non-LFL
+    - Not LFL
+    - opened this year
+- synonym: Noon
+  examples: |
+    - noon
+
+- synonym: Standalone
+  examples: |
+    - Standalone
+
+- synonym: company
+  examples: |
+    - company
+    - brand
+- synonym: compare
+  examples: |
+    - compare
+    - analyze
+    - correlate
+- synonym: concept
+  examples: |
+    - concept
+- synonym: date
+  examples: |
+    - date
+
+- synonym: get
+  examples: |
+    - get
+    - display
+    - present
+    - show
+    - find
+    - fetch
+    - produce
+- synonym: Growth
+  examples: |
+    - growth
+    - increase
+    - grow
+    - grown
+- synonym: store
+  examples: |
+    - store
+    - location
+    - retail outlet
+    - outlet
+- synonym: store-type
+  examples: |
+    - store-type
+    - type of store
+
+#superlatives
+
+- synonym: worst
+  examples: |
+    - worst
+    - bottom
+
+
+- synonym: best
+  examples: |
+    - Best
+    - top
+    
+#Store Type
+- synonym: B&M
+  examples: |
+    - Brick and Mortar
+- synonym: Ecomm
+  examples: |
+    - ecommerce
+    - e-commerce

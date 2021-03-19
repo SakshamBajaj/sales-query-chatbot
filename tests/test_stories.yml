@@ -1,0 +1,413 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+#metric value checks
+
+- story: metric_val_COGS
+  steps:
+  - intent: metric_value
+    entities:
+    - metric: COGS
+    - concepts: Homecentre
+    - Territory: KSA
+    - superlative: worst
+    - time: '2020-03-01T00:00:00.000+04:00'
+  - slot_was_set:
+    - Territory:
+      - KSA
+  - slot_was_set:
+    - concepts:
+      - Homecentre
+  - slot_was_set:
+    - metric: COGS
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range:
+        value: '2020-03-01T00:00:00.000+04:00'
+        grain: month
+        type: value
+  - slot_was_set:
+    - Territory:
+      - KSA
+  - slot_was_set:
+    - metric: COGS
+  - slot_was_set:
+    - concepts:
+      - Homecentre
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+
+- story: metric_val
+  steps:
+  - intent: metric_value
+    entities:
+    - concepts: Splash
+    - metric: Sales Value
+    - superlative: worst
+    - Territory: BAHRAIN
+    - time: '2020-02-01T00:00:00.000+04:00'
+  - slot_was_set:
+    - Territory:
+      - BAHRAIN
+  - slot_was_set:
+    - concepts:
+      - Splash
+  - slot_was_set:
+    - metric: Sales Value
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range:
+        value: '2020-02-01T00:00:00.000+04:00'
+        grain: month
+        type: value
+  - slot_was_set:
+    - Territory:
+      - BAHRAIN
+  - slot_was_set:
+    - superlative: worst
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - concepts:
+      - Splash
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+  - intent: metric_value
+    entities:
+    - concepts: Max
+    - metric: Gross Margin
+    - Territory: KSA
+  - slot_was_set:
+    - Territory:
+      - KSA
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - metric: Gross Margin
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range: null
+  - slot_was_set:
+    - Territory:
+      - KSA
+  - slot_was_set:
+    - metric: Gross Margin
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - requested_slot: date_range
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range: null
+  - slot_was_set:
+    - metric: Gross Margin
+  - slot_was_set:
+    - concepts: Max
+  - slot_was_set:
+    - requested_slot: date_range
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range:
+        value: '2020-01-01T00:00:00.000+04:00'
+        grain: month
+        type: value
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+  - intent: metric_value
+    entities:
+    - concepts: Babyshop
+    - Territory: OMAN
+  - slot_was_set:
+    - Territory:
+      - OMAN
+  - slot_was_set:
+    - concepts:
+      - Babyshop
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range: null
+  - slot_was_set:
+    - Territory:
+      - OMAN
+  - slot_was_set:
+    - concepts:
+      - Babyshop
+  - slot_was_set:
+    - requested_slot: metric
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range: null
+  - slot_was_set:
+    - concepts: Babyshop
+  - slot_was_set:
+    - requested_slot: metric
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range: null
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - requested_slot: date_range
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range:
+        value: '2018-12-01T00:00:00.000+04:00'
+        grain: month
+        type: value
+  - slot_was_set:
+    - requested_slot: null
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+  - intent: store_rank_by_metric
+    entities:
+    - concepts: Home Box
+    - metric: Sales Value
+    - Territory: EGYPT
+  - slot_was_set:
+    - Territory:
+      - EGYPT
+  - slot_was_set:
+    - concepts:
+      - Home Box
+  - slot_was_set:
+    - metric: Sales Value
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - trigger_intent: metric_value
+  - slot_was_set:
+    - date_range:
+        value: '2018-12-01T00:00:00.000+04:00'
+        grain: month
+        type: value
+  - slot_was_set:
+    - Territory:
+      - EGYPT
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - concepts:
+      - Home Box
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+
+
+- story: interactive_story_1
+  steps:
+  - intent: store_rank_by_metric
+    entities:
+    - store_number: '10'
+    - concepts: Max
+    - metric: Sales Value
+    - superlative: best
+    - Territory: UAE
+    - time: '2019-01-01T00:00:00.000+04:00'
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - superlative: best
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - number_of_stores: 10
+  - slot_was_set:
+    - trigger_intent: store_rank_by_metric
+  - slot_was_set:
+    - date_range:
+        value: '2019-06-01T00:00:00.000+04:00'
+        grain: year
+        type: value
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - superlative: best
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+
+
+- story: interactive_story_2
+  steps:
+  - intent: store_rank_by_metric
+    entities:
+    - store_number: '10'
+    - concepts: Max
+    - metric: Sales Value
+    - superlative: best
+    - Territory: UAE
+    - time: '2019-01-01T00:00:00.000+04:00'
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - metric: COGS
+  - slot_was_set:
+    - superlative: best
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - number_of_stores: 10
+  - slot_was_set:
+    - trigger_intent: store_rank_by_metric
+  - slot_was_set:
+    - date_range:
+        value: '2019-06-01T00:00:00.000+04:00'
+        grain: year
+        type: value
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - superlative: best
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+
+
+- story: interactive_story_3
+  steps:
+  - intent: store_rank_by_metric
+    entities:
+    - store_number: '10'
+    - concepts: Max
+    - metric: Sales Value
+    - superlative: best
+    - Territory: UAE
+    - time: '2019-01-01T00:00:00.000+04:00'
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - metric: Gross Profit
+  - slot_was_set:
+    - superlative: best
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - number_of_stores: 10
+  - slot_was_set:
+    - trigger_intent: store_rank_by_metric
+  - slot_was_set:
+    - date_range:
+        value: '2019-06-01T00:00:00.000+04:00'
+        grain: year
+        type: value
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - superlative: best
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form
+
+
+- story: interactive_story_4
+  steps:
+  - intent: store_rank_by_metric
+    entities:
+    - store_number: '10'
+    - concepts: Max
+    - metric: Gross Margin
+    - superlative: best
+    - Territory: UAE
+    - time: '2019-01-01T00:00:00.000+04:00'
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - superlative: best
+  - action: get_metric_form
+  - active_loop: get_metric_form
+  - slot_was_set:
+    - number_of_stores: 10
+  - slot_was_set:
+    - trigger_intent: store_rank_by_metric
+  - slot_was_set:
+    - date_range:
+        value: '2019-06-01T00:00:00.000+04:00'
+        grain: year
+        type: value
+  - slot_was_set:
+    - Territory:
+      - UAE
+  - slot_was_set:
+    - superlative: best
+  - slot_was_set:
+    - metric: Sales Value
+  - slot_was_set:
+    - concepts:
+      - Max
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_submit_get_metric_form

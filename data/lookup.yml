@@ -1,0 +1,308 @@
+version: "2.0"
+nlu:
+
+- regex: year_extract
+  examples: |
+   -\b(201|202)\d{1}\b 
+
+- regex: store_number
+  examples: |
+   - \b\d{1,2}\b 
+   - \bone\b 
+   - \btwo\b 
+   - \bthree\b
+   - \bfour\b
+   - \bfive\b 
+   - \bsix\b 
+   - \bseven\b
+   - \beight\b
+   - \bnine\b
+   - \bten\b
+   - \beleven\b
+   - \btwelve\b
+   - \bthirteen\b
+   - \bfourteen\b
+   - \bfifteen\b
+
+
+
+- lookup: get_command
+  examples: |
+    - get
+    - display
+    - present
+    - show
+    - find
+    - fetch
+    - produce
+    - compare
+    - analyze
+    - correlate
+
+- lookup: concepts
+  examples: |
+    - nike
+    - adidas
+    - puma
+    - reebok
+    - vans
+    - converse
+    - bata
+
+- lookup: metric
+  examples: |
+    - COGS
+    - Cost of Goods Sold
+    - Budgeted COGS
+    - budgeted cogs
+    - budgeted cost of goods sold
+    - Gross Margin
+    - gross margins
+    - gm
+    - margin
+    - margins
+    - Count of Invoices 
+    - Sales Qty
+    - sales quantity
+    - quantity sold
+    - Sales Value
+    - sales
+    - sales revenue
+    - revenue
+    - Budgeted Gross Margin
+    - Budgeted gm
+    - Budgeted Sales
+    - projected sales
+    - budgeted revenue
+    - Gross Profit
+    - GP
+    - profit
+  
+- lookup: calculated_metric
+  examples: |
+    - PSF
+    - per day per sqft
+    - per day per squarefeet
+    - for every day for each sqft
+    - Budget Achievement
+    - achievement
+    - achieved
+    - achieve
+    - attained
+    - growth
+    - increase
+    - grow
+    - grown
+
+    
+- lookup: superlative
+  examples: |
+    - best
+    - top
+    - worst
+    - bottom
+
+
+- lookup: territory
+  examples: |
+    - KSA
+    - Saudi Arabia
+    - Kingdom of Saudi Arabia
+    - saudi
+    - UAE
+    - United Arab Emirates
+    - Emirates
+    - U.A.E.
+    - EGYPT
+    - Egy
+    - egy
+    - QATAR
+    - Qat
+    - OMAN
+    - Oma
+    - KUWAIT
+    - kuw
+    - LEBANON
+    - leb
+    - lab
+    - JORDAN
+    - Jor
+    - jord
+    - BAHRAIN
+    - bah
+
+- lookup: LFL_or_Non_LFL
+  examples: |
+    - LFL
+    - Like For Like
+    - Non-LFL
+    - Non LFL
+    - Non Like For Like
+    - Not Like For Like
+
+- lookup: CP_Non_CP
+  examples: |
+    - CP
+    - Non-CP
+- lookup: store_type
+  examples: |
+    - B&M
+    - Brick and Mortar
+    - Ecomm
+    - ecommerce
+    - e-commerce
+- lookup: store_subtype
+  examples: |
+    - MALL
+    - Clearance
+    - Standalone
+    - Ecomm
+    - Others
+    - KIOSK
+    - SIS
+    - Ecomm 3rd Party
+
+
+    
+- lookup: region
+  examples: |
+    - Riyadh
+    - Dammam
+    - Abu Dhabi
+    - Dubai
+    - Abha
+    - Ajman
+    - Al Ain
+    - Jeddah
+    - Doha
+    - Buraidha
+    - Sharjah
+    - Muscat
+    - Alexandria
+    - Al Farwaniyah
+    - Irbid
+    - Kuwait City
+    - Al Manama
+    - Al-batinah
+    - Al Wakrah
+    - Mount Lebanon
+    - Ras Al Khaimah
+    - Cairo
+    - Ash-sharqiyah
+    - Others
+    - South Lebanon
+    - Al Wusta
+    - Al Ahmadi
+    - Fujairah
+    - Amman
+    - Al Rayyan
+    - Hawally
+    - Dhahirah
+    - Dhakilyah
+    - Dhofar
+    - Al Muharraq
+    - North Lebanon
+    - Umm Al Quwain
+    - others
+    - Al Khor
+    - Al-zarqa
+    - Ibri
+    - DAMMAM
+    - Gharbia
+    - Fahaheel
+    - Others_kuwait
+    - Ad-dakhiliyah
+- lookup: sub_region
+  examples: |
+    - Riyadh
+    - Abqaiq
+    - Abu Dhabi
+    - Dubai
+    - Abu Arish
+    - Ajman
+    - Al Ain
+    - Jeddah
+    - Doha
+    - Al Bahah
+    - Al Bukayriyah
+    - Dawadimi
+    - Sharjah
+    - Hofuf
+    - Yanbu Al Khurik
+    - Al Jouf
+    - Muscat
+    - Medina
+    - Ar Rass
+    - Makkah
+    - Az Zulfi
+    - Alexandria
+    - Al Farwaniyah
+    - Irbid
+    - Ar'ar
+    - Kuwait City
+    - Unayzah
+    - Najran
+    - Al Manama
+    - Baljurshi
+    - Al-batinah
+    - Al Wakrah
+    - Mount Lebanon
+    - Ras Al Khaimah
+    - Bisha
+    - Cairo
+    - Buraydah
+    - Others
+    - Ash-sharqiyah
+    - Al Qatif
+    - Al Kharj
+    - Tabuk
+    - Khobar
+    - Abha
+    - Dammam
+    - nan
+    - South Lebanon
+    - Al Wusta
+    - Al Ahmadi
+    - Fujairah
+    - Jubail
+    - Amman
+    - Ha'il
+    - Al Rayyan
+    - Hafr Al Batin
+    - Hawally
+    - Ibri
+    - Al Jahra
+    - Jizan
+    - Taif
+    - Khafji
+    - Khamis Mushayt
+    - Al Majardah
+    - Al Majma'ah
+    - Mhayel
+    - Nairyah
+    - Ad-dakhiliyah
+    - Dhofar
+    - Al Muharraq
+    - Qurayyat
+    - Rafhah
+    - Ras Tanura
+    - Sabya
+    - Salalah
+    - Sarat Abidah
+    - Sharurah
+    - Shaqra
+    - Beirut
+    - North Lebanon
+    - Umm Al Quwain
+    - Wadi Al-dawasir
+    - Muaither
+    - Murraikah
+    - Al Khor
+    - Al-zarqa
+    - Buraidha
+    - others
+    - Tubarjal
+    - Al Qunfudhah
+    - Rabigh
+    - Samtah
+    - Sabt Alalayah

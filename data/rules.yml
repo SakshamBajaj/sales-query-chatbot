@@ -1,0 +1,32 @@
+version: "2.0"
+
+rules:
+
+- rule: activate get metric form
+
+  steps:
+  - intent: metric_value
+  - action: get_metric_form
+  - active_loop: get_metric_form
+
+- rule: activate rank by metric form
+  steps:
+  - intent: store_rank_by_metric
+  - action: get_metric_form
+  - active_loop: get_metric_form
+
+- rule: submit get metric form
+  condition:
+  - active_loop: get_metric_form
+  steps:
+  - action: get_metric_form
+  - active_loop: null
+  - action: action_submit_get_metric_form
+  - action: action_listen
+
+#Info Rules:
+- rule: respond to faqs
+  steps:
+  - intent: faq
+  - action: utter_faq
+

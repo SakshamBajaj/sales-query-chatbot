@@ -1,0 +1,2803 @@
+[
+  {
+    "text": "sales revenue for LFL emax stores in UAE for may 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "sales revenue",
+        "entity": "metric"
+      },
+      {
+        "start": 18,
+        "end": 21,
+        "value": "LFL",
+        "entity": "LFL_or_Non_LFL"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "value": "emax",
+        "entity": "concepts"
+      },
+      {
+        "start": 37,
+        "end": 40,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 49,
+        "end": 53,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 22,
+        "end": 26,
+        "value": "Emax",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 5,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 6,
+        "end": 13,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 37,
+        "end": 40,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "LFL_or_Non_LFL",
+        "start": 18,
+        "end": 21,
+        "value": "LFL",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "get me ecommerce gp for UAE and KSA",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "get",
+        "entity": "get_command"
+      },
+      {
+        "start": 7,
+        "end": 16,
+        "value": "ecommerce",
+        "entity": "store_type"
+      },
+      {
+        "start": 17,
+        "end": 19,
+        "value": "gp",
+        "entity": "metric"
+      },
+      {
+        "start": 24,
+        "end": 27,
+        "value": "UAE",
+        "entity": "Territory"
+      },
+      {
+        "start": 32,
+        "end": 35,
+        "value": "KSA",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 3,
+        "value": "get",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 17,
+        "end": 19,
+        "value": "Gross Profit",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 24,
+        "end": 27,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 32,
+        "end": 35,
+        "value": "KSA",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "show sales for Muscat standalone B&M stores",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "show",
+        "entity": "get_command"
+      },
+      {
+        "start": 5,
+        "end": 10,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 15,
+        "end": 21,
+        "value": "Muscat",
+        "entity": "region"
+      },
+      {
+        "start": 22,
+        "end": 32,
+        "value": "standalone",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 33,
+        "end": 36,
+        "value": "B&M",
+        "entity": "store_type"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 4,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 5,
+        "end": 10,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "region",
+        "start": 15,
+        "end": 21,
+        "value": "Muscat",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "sub_region",
+        "start": 15,
+        "end": 21,
+        "value": "Muscat",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "gross profit for Ecco Doha",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "gross profit",
+        "entity": "metric"
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "value": "Ecco",
+        "entity": "brands"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "value": "Doha",
+        "entity": "region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 12,
+        "value": "Gross Profit",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "region",
+        "start": 22,
+        "end": 26,
+        "value": "Doha",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "sub_region",
+        "start": 22,
+        "end": 26,
+        "value": "Doha",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "from september to october 2018, present Budgeted Sales for Oman",
+    "entities": [
+      {
+        "start": 32,
+        "end": 39,
+        "value": "present",
+        "entity": "get_command"
+      },
+      {
+        "start": 40,
+        "end": 54,
+        "value": "Budgeted Sales",
+        "entity": "metric"
+      },
+      {
+        "start": 59,
+        "end": 63,
+        "value": "Oman",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 26,
+        "end": 30,
+        "value": "2018",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "get_command",
+        "start": 32,
+        "end": 39,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 40,
+        "end": 54,
+        "value": "Budgeted Sales",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 59,
+        "end": 63,
+        "value": "OMAN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "sales for homecentre and homebox in UAE and KSA for may 2017",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 10,
+        "end": 20,
+        "value": "homecentre",
+        "entity": "concepts"
+      },
+      {
+        "start": 25,
+        "end": 32,
+        "value": "homebox",
+        "entity": "concepts"
+      },
+      {
+        "start": 36,
+        "end": 39,
+        "value": "UAE",
+        "entity": "Territory"
+      },
+      {
+        "start": 44,
+        "end": 47,
+        "value": "KSA",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 56,
+        "end": 60,
+        "value": "2017",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 10,
+        "end": 20,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "concepts",
+        "start": 25,
+        "end": 32,
+        "value": "Home Box",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 5,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 36,
+        "end": 39,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 44,
+        "end": 47,
+        "value": "KSA",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "COGS for Oman and Qatar for June 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "Oman",
+        "entity": "Territory"
+      },
+      {
+        "start": 18,
+        "end": 23,
+        "value": "Qatar",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 33,
+        "end": 37,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 4,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 9,
+        "end": 13,
+        "value": "OMAN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 18,
+        "end": 23,
+        "value": "QATAR",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "sales for iconic from may to august 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "iconic",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 36,
+        "end": 40,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 10,
+        "end": 16,
+        "value": "Iconic",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 5,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "budgeted COGS for adidas in bahrain  from may to june 2020",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "Budgeted COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 18,
+        "end": 24,
+        "value": "adidas",
+        "entity": "brands"
+      },
+      {
+        "start": 28,
+        "end": 35,
+        "value": "bahrain",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 54,
+        "end": 58,
+        "value": "2020",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 13,
+        "value": "Budgeted COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 28,
+        "end": 35,
+        "value": "BAHRAIN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "revenue for standalone splash and max stores from january to february 2016",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "revenue",
+        "entity": "metric"
+      },
+      {
+        "start": 12,
+        "end": 22,
+        "value": "standalone",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 23,
+        "end": 29,
+        "value": "splash",
+        "entity": "concepts"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "max",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 70,
+        "end": 74,
+        "value": "2016",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 23,
+        "end": 29,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "concepts",
+        "start": 34,
+        "end": 37,
+        "value": "Max",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 7,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "budgeted sales for splash and emax for 3rd March 2020",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "Budgeted Sales",
+        "entity": "metric"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "value": "splash",
+        "entity": "concepts"
+      },
+      {
+        "start": 30,
+        "end": 34,
+        "value": "emax",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 49,
+        "end": 53,
+        "value": "2020",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 19,
+        "end": 25,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "concepts",
+        "start": 30,
+        "end": 34,
+        "value": "Emax",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 14,
+        "value": "Budgeted Sales",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "present gross margin for emax for 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "present",
+        "entity": "get_command"
+      },
+      {
+        "start": 8,
+        "end": 20,
+        "value": "Gross Margin",
+        "entity": "metric"
+      },
+      {
+        "start": 34,
+        "end": 38,
+        "value": "2019",
+        "entity": "year_extract"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 34,
+        "end": 38,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 7,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "concepts",
+        "start": 25,
+        "end": 29,
+        "value": "Emax",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 8,
+        "end": 20,
+        "value": "Gross Margin",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Gross margin for emax for may 2017",
+    "entities": [
+      {
+        "start": 0,
+        "end": 12,
+        "value": "Gross Margin",
+        "entity": "metric"
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "value": "emax",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 30,
+        "end": 34,
+        "value": "2017",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 17,
+        "end": 21,
+        "value": "Emax",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 12,
+        "value": "Gross Margin",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "how much of the COGS budget was achieved for hc in july last year",
+    "entities": [
+      {
+        "start": 16,
+        "end": 20,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 21,
+        "end": 40,
+        "value": "Budget Achievement",
+        "entity": "calculated_metric"
+      },
+      {
+        "start": 45,
+        "end": 47,
+        "value": "hc",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "concepts",
+        "start": 45,
+        "end": 47,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 16,
+        "end": 20,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "sales achievement for shoexpress in september 2017",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 6,
+        "end": 17,
+        "value": "achievement",
+        "entity": "calculated_metric"
+      },
+      {
+        "start": 22,
+        "end": 32,
+        "value": "shoexpress",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 46,
+        "end": 50,
+        "value": "2017",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 22,
+        "end": 32,
+        "value": "Shoexpress",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 5,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what is the [gm] {\"entity\": \"metric\", value: \"Gross Margin\"} per day per sqft for [home box] (concepts)?",
+    "entities": [
+      {
+        "start": 61,
+        "end": 77,
+        "value": "PSF",
+        "entity": "calculated_metric"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "concepts",
+        "start": 83,
+        "end": 91,
+        "value": "Home Box",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 38,
+        "end": 43,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 46,
+        "end": 58,
+        "value": "Gross Margin",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "show total sales PD PSF for splash?",
+    "entities": [
+      {
+        "start": 5,
+        "end": 16,
+        "value": "total sales",
+        "entity": "metric"
+      },
+      {
+        "start": 17,
+        "end": 23,
+        "value": "PD PSF",
+        "entity": "calculated_metric"
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "value": "splash",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 4,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "concepts",
+        "start": 28,
+        "end": 34,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 5,
+        "end": 16,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "calculated_metric",
+        "start": 20,
+        "end": 23,
+        "value": "PSF",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "get me the growth for homecenter Non-LFL total sales revenue in UAE in march 2018",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 22,
+        "end": 32,
+        "value": "homecenter",
+        "entity": "concepts"
+      },
+      {
+        "start": 33,
+        "end": 40,
+        "value": "Non-LFL",
+        "entity": "LFL_or_Non_LFL"
+      },
+      {
+        "start": 41,
+        "end": 60,
+        "value": "total sales revenue",
+        "entity": "metric"
+      },
+      {
+        "start": 64,
+        "end": 67,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 77,
+        "end": 81,
+        "value": "2018",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 3,
+        "value": "get",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 22,
+        "end": 32,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 41,
+        "end": 52,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 53,
+        "end": 60,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 64,
+        "end": 67,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "LFL_or_Non_LFL",
+        "start": 33,
+        "end": 40,
+        "value": "Non-LFL",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "growth_command",
+        "start": 11,
+        "end": 17,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "growth of splash sales for standalone stores in Cairo for july 2020",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "splash",
+        "entity": "concepts"
+      },
+      {
+        "start": 17,
+        "end": 22,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 27,
+        "end": 37,
+        "value": "standalone",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 48,
+        "end": 53,
+        "value": "Cairo",
+        "entity": "sub_region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 63,
+        "end": 67,
+        "value": "2020",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 10,
+        "end": 16,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 17,
+        "end": 22,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "region",
+        "start": 48,
+        "end": 53,
+        "value": "Cairo",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "sub_region",
+        "start": 48,
+        "end": 53,
+        "value": "Cairo",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "centrepoint sales growth in KSA for may 2017",
+    "entities": [
+      {
+        "start": 0,
+        "end": 11,
+        "value": "centrepoint",
+        "entity": "concepts"
+      },
+      {
+        "start": 12,
+        "end": 17,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 18,
+        "end": 24,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 28,
+        "end": 31,
+        "value": "KSA",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 40,
+        "end": 44,
+        "value": "2017",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 0,
+        "end": 11,
+        "value": "centrepoint",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 12,
+        "end": 17,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 28,
+        "end": 31,
+        "value": "KSA",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 18,
+        "end": 24,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "growth of splash sales in bahrain for july 2020",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "splash",
+        "entity": "concepts"
+      },
+      {
+        "start": 17,
+        "end": 22,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 26,
+        "end": 33,
+        "value": "bahrain",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 43,
+        "end": 47,
+        "value": "2020",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 10,
+        "end": 16,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 17,
+        "end": 22,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 26,
+        "end": 33,
+        "value": "BAHRAIN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "Max ecommerce growth in UAE between january and february 2018",
+    "entities": [
+      {
+        "start": 0,
+        "end": 3,
+        "value": "Max",
+        "entity": "concepts"
+      },
+      {
+        "start": 4,
+        "end": 13,
+        "value": "ecommerce",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 14,
+        "end": 20,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 24,
+        "end": 27,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 57,
+        "end": 61,
+        "value": "2018",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 0,
+        "end": 3,
+        "value": "Max",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 24,
+        "end": 27,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 14,
+        "end": 20,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "growth in COGS for standalone stores in Bahrain and UAE last year",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 10,
+        "end": 14,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "value": "standalone",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 40,
+        "end": 47,
+        "value": "Bahrain",
+        "entity": "Territory"
+      },
+      {
+        "start": 52,
+        "end": 55,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "metric",
+        "start": 10,
+        "end": 14,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 40,
+        "end": 47,
+        "value": "BAHRAIN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 52,
+        "end": 55,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "By what percentage did Splash COGS grow this year",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "Splash",
+        "entity": "concepts"
+      },
+      {
+        "start": 30,
+        "end": 34,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 35,
+        "end": 39,
+        "value": "grow",
+        "entity": "growth_command"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "concepts",
+        "start": 23,
+        "end": 29,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 30,
+        "end": 34,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "growth in ecommerce gross margin for may 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 10,
+        "end": 19,
+        "value": "ecommerce",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 20,
+        "end": 32,
+        "value": "gross margin",
+        "entity": "metric"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 41,
+        "end": 45,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 20,
+        "end": 32,
+        "value": "Gross Margin",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "growth for UAE and Qatar sales revenue in june 2017",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "entity": "growth_command"
+      },
+      {
+        "start": 11,
+        "end": 14,
+        "value": "UAE",
+        "entity": "Territory"
+      },
+      {
+        "start": 19,
+        "end": 24,
+        "value": "Qatar",
+        "entity": "Territory"
+      },
+      {
+        "start": 25,
+        "end": 38,
+        "value": "sales revenue",
+        "entity": "metric"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 47,
+        "end": 51,
+        "value": "2017",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 25,
+        "end": 30,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 31,
+        "end": 38,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 11,
+        "end": 14,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 19,
+        "end": 24,
+        "value": "QATAR",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 0,
+        "end": 6,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "how much did max COGS grow in may 2019",
+    "entities": [
+      {
+        "start": 13,
+        "end": 16,
+        "value": "max",
+        "entity": "concepts"
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 22,
+        "end": 26,
+        "value": "grow",
+        "entity": "growth_command"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 34,
+        "end": 38,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 13,
+        "end": 16,
+        "value": "Max",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 17,
+        "end": 21,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "what was homecenter sales growth between january and february 2018",
+    "entities": [
+      {
+        "start": 9,
+        "end": 19,
+        "value": "homecenter",
+        "entity": "concepts"
+      },
+      {
+        "start": 20,
+        "end": 25,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 26,
+        "end": 32,
+        "value": "growth",
+        "entity": "growth_command"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 62,
+        "end": 66,
+        "value": "2018",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 9,
+        "end": 19,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 20,
+        "end": 25,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "growth_command",
+        "start": 26,
+        "end": 32,
+        "value": "growth",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "present the 8 worst LFL stores by sales in Ibri in may 2019",
+    "entities": [
+      {
+        "start": 12,
+        "end": 13,
+        "value": "8",
+        "entity": "store_number"
+      },
+      {
+        "start": 14,
+        "end": 19,
+        "value": "worst",
+        "entity": "superlative"
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "value": "LFL",
+        "entity": "LFL_or_Non_LFL"
+      },
+      {
+        "start": 34,
+        "end": 39,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 43,
+        "end": 47,
+        "value": "Ibri",
+        "entity": "sub_region"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 12,
+        "end": 13,
+        "value": "8",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 55,
+        "end": 59,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 7,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 34,
+        "end": 39,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 14,
+        "end": 19,
+        "value": "worst",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "LFL_or_Non_LFL",
+        "start": 20,
+        "end": 23,
+        "value": "LFL",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "region",
+        "start": 43,
+        "end": 47,
+        "value": "Ibri",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "sub_region",
+        "start": 43,
+        "end": 47,
+        "value": "Ibri",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "show me 11 performing stores by COGS in Bahrain for homecenter in june 2018",
+    "entities": [
+      {
+        "start": 8,
+        "end": 10,
+        "value": "11",
+        "entity": "store_number"
+      },
+      {
+        "start": 32,
+        "end": 36,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 40,
+        "end": 47,
+        "value": "Bahrain",
+        "entity": "Territory"
+      },
+      {
+        "start": 52,
+        "end": 62,
+        "value": "homecenter",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 8,
+        "end": 10,
+        "value": "11",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 71,
+        "end": 75,
+        "value": "2018",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 4,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "concepts",
+        "start": 52,
+        "end": 62,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 32,
+        "end": 36,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 40,
+        "end": 47,
+        "value": "BAHRAIN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "rank the best five stores by gross margins in the UAE for dec 2017",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rank",
+        "entity": "rank_command"
+      },
+      {
+        "start": 9,
+        "end": 13,
+        "value": "best",
+        "entity": "superlative"
+      },
+      {
+        "start": 14,
+        "end": 18,
+        "value": "five",
+        "entity": "store_number"
+      },
+      {
+        "start": 29,
+        "end": 42,
+        "value": "gross margins",
+        "entity": "metric"
+      },
+      {
+        "start": 50,
+        "end": 53,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 14,
+        "end": 18,
+        "value": "five",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 62,
+        "end": 66,
+        "value": "2017",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 29,
+        "end": 42,
+        "value": "Gross Margin",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 9,
+        "end": 13,
+        "value": "best",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 50,
+        "end": 53,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "list the Worst ten homecenter standalone stores for may 2020 by gp",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "list",
+        "entity": "rank_command"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "value": "worst",
+        "entity": "superlative"
+      },
+      {
+        "start": 15,
+        "end": 18,
+        "value": "ten",
+        "entity": "store_number"
+      },
+      {
+        "start": 19,
+        "end": 29,
+        "value": "homecenter",
+        "entity": "concepts"
+      },
+      {
+        "start": 30,
+        "end": 40,
+        "value": "standalone",
+        "entity": "store_subtype"
+      },
+      {
+        "start": 64,
+        "end": 66,
+        "value": "gp",
+        "entity": "metric"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 15,
+        "end": 18,
+        "value": "ten",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 56,
+        "end": 60,
+        "value": "2020",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 19,
+        "end": 29,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 64,
+        "end": 66,
+        "value": "Gross Profit",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 9,
+        "end": 14,
+        "value": "worst",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Worst 10 homecentre stores in UAE for march 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "worst",
+        "entity": "superlative"
+      },
+      {
+        "start": 6,
+        "end": 8,
+        "value": "10",
+        "entity": "store_number"
+      },
+      {
+        "start": 9,
+        "end": 19,
+        "value": "homecentre",
+        "entity": "concepts"
+      },
+      {
+        "start": 30,
+        "end": 33,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 6,
+        "end": 8,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 44,
+        "end": 48,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 9,
+        "end": 19,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 0,
+        "end": 5,
+        "value": "worst",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 30,
+        "end": 33,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "What were the five stores by sales revenue for may 2020",
+    "entities": [
+      {
+        "start": 14,
+        "end": 18,
+        "value": "five",
+        "entity": "store_number"
+      },
+      {
+        "start": 29,
+        "end": 42,
+        "value": "sales revenue",
+        "entity": "metric"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 14,
+        "end": 18,
+        "value": "five",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 51,
+        "end": 55,
+        "value": "2020",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 29,
+        "end": 34,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 35,
+        "end": 42,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "rank stores by sales for 2019",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rank",
+        "entity": "rank_command"
+      },
+      {
+        "start": 15,
+        "end": 20,
+        "value": "sales",
+        "entity": "metric"
+      },
+      {
+        "start": 25,
+        "end": 29,
+        "value": "2019",
+        "entity": "year_extract"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 25,
+        "end": 29,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "metric",
+        "start": 15,
+        "end": 20,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "rank",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rank",
+        "entity": "rank_command"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "list",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "list",
+        "entity": "rank_command"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "rank top eleven stores for max uae last year",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "rank",
+        "entity": "rank_command"
+      },
+      {
+        "start": 5,
+        "end": 8,
+        "value": "top",
+        "entity": "superlative"
+      },
+      {
+        "start": 9,
+        "end": 15,
+        "value": "eleven",
+        "entity": "store_number"
+      },
+      {
+        "start": 27,
+        "end": 30,
+        "value": "max",
+        "entity": "concepts"
+      },
+      {
+        "start": 31,
+        "end": 34,
+        "value": "uae",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 9,
+        "end": 15,
+        "value": "eleven",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 27,
+        "end": 30,
+        "value": "Max",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 5,
+        "end": 8,
+        "value": "best",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 31,
+        "end": 34,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "classify the worst stores by COGS",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "classify",
+        "entity": "rank_command"
+      },
+      {
+        "start": 13,
+        "end": 18,
+        "value": "worst",
+        "entity": "superlative"
+      },
+      {
+        "start": 29,
+        "end": 33,
+        "value": "COGS",
+        "entity": "metric"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "metric",
+        "start": 29,
+        "end": 33,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 13,
+        "end": 18,
+        "value": "worst",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "from may to june 2019, top eight COGS for splash",
+    "entities": [
+      {
+        "start": 23,
+        "end": 26,
+        "value": "best",
+        "entity": "superlative"
+      },
+      {
+        "start": 27,
+        "end": 32,
+        "value": "eight",
+        "entity": "store_number"
+      },
+      {
+        "start": 33,
+        "end": 37,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 42,
+        "end": 48,
+        "value": "splash",
+        "entity": "concepts"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 27,
+        "end": 32,
+        "value": "eight",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "year_extract",
+        "start": 17,
+        "end": 21,
+        "value": "2019",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 42,
+        "end": 48,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 33,
+        "end": 37,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 23,
+        "end": 26,
+        "value": "best",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "show botom cogs for LFL stores in bah",
+    "entities": [
+      {
+        "start": 5,
+        "end": 10,
+        "value": "worst",
+        "entity": "superlative"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 20,
+        "end": 23,
+        "value": "LFL",
+        "entity": "LFL_or_Non_LFL"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "value": "bah",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "get_command",
+        "start": 0,
+        "end": 4,
+        "value": "get",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 11,
+        "end": 15,
+        "value": "COGS",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 34,
+        "end": 37,
+        "value": "BAHRAIN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "LFL_or_Non_LFL",
+        "start": 20,
+        "end": 23,
+        "value": "LFL",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "cogscogs for hc uaeuae last march",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 4,
+        "end": 8,
+        "value": "COGS",
+        "entity": "metric"
+      },
+      {
+        "start": 13,
+        "end": 15,
+        "value": "Homecentre",
+        "entity": "concepts"
+      },
+      {
+        "start": 16,
+        "end": 19,
+        "value": "UAE",
+        "entity": "Territory"
+      },
+      {
+        "start": 19,
+        "end": 22,
+        "value": "UAE",
+        "entity": "Territory"
+      },
+      {
+        "start": 23,
+        "end": 27,
+        "value": "worst",
+        "entity": "superlative"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "concepts",
+        "start": 13,
+        "end": 15,
+        "value": "Homecentre",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "sales for splash bah last feb",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Sales Value",
+        "entity": "metric"
+      },
+      {
+        "start": 10,
+        "end": 16,
+        "value": "Splash",
+        "entity": "concepts"
+      },
+      {
+        "start": 17,
+        "end": 20,
+        "value": "BAHRAIN",
+        "entity": "Territory"
+      },
+      {
+        "start": 21,
+        "end": 25,
+        "value": "worst",
+        "entity": "superlative"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "concepts",
+        "start": 10,
+        "end": 16,
+        "value": "Splash",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "metric",
+        "start": 0,
+        "end": 5,
+        "value": "Sales Value",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 17,
+        "end": 20,
+        "value": "BAHRAIN",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "dec 2018",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "year_extract",
+        "start": 4,
+        "end": 8,
+        "value": "2018",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "rank best 10 max stores uae for last year",
+    "entities": [
+      {
+        "start": 5,
+        "end": 9,
+        "value": "best",
+        "entity": "superlative"
+      },
+      {
+        "start": 13,
+        "end": 16,
+        "value": "Max",
+        "entity": "concepts"
+      },
+      {
+        "start": 24,
+        "end": 27,
+        "value": "UAE",
+        "entity": "Territory"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "store_number",
+        "start": 10,
+        "end": 12,
+        "value": "10",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "concepts",
+        "start": 13,
+        "end": 16,
+        "value": "Max",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "superlative",
+        "start": 5,
+        "end": 9,
+        "value": "best",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "Territory",
+        "start": 24,
+        "end": 27,
+        "value": "UAE",
+        "extractor": "RegexEntityExtractor",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

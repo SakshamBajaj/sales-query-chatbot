@@ -1,0 +1,152 @@
+version: "2.0"
+nlu:
+- intent: metric_value
+  examples: |
+    - [sales revenue](metric) for [LFL](LFL_or_Non_LFL) [puma](concepts) stores in [UAE](territory) for may 2019
+    - [get](get_command) me [ecommerce](store_type) [gp](metric) for [UAE](territory) and [KSA](territory)
+    - [show](get_command) [sales value](metric) for [Muscat](region) [standalone](store_subtype) [B&M](store_type) stores
+    - [gross profit](metric) for  [Doha](region)
+    - from september to october 2018, [present](get_command) [Budgeted Sales]{"entity": "metric", "value": "Budgeted Sales"} for [Oman](territory)
+    - [sales](metric) for [nike](concepts) and [nike](concepts) in [UAE](territory) and [KSA](territory) for may 2017
+    - [COGS]{"entity": "metric", "value": "COGS"} for [Oman](territory) and [Qatar](territory) for June 2019
+    - [sales](metric) for [adidas](concepts) from may to august 2019
+    - [budgeted COGS]{"entity": "metric", "value": "Budgeted COGS"} for [adidas](concepts) in [bahrain](territory)  from may to june 2020
+    - [revenue](metric) for [standalone](store_subtype) [splash](concepts) and [adidas](concepts) stores from january to february 2016
+    - [budgeted sales]{"entity": "metric", "value": "Budgeted Sales"} for [puma](concepts) for 3rd March 2020
+    - [present](get_command) [gross margin]{"entity": "metric", "value": "Gross Margin"} for puma for [2019](year_extract)
+    - [Gross margin]{"entity": "metric", "value": "Gross Margin"} for [converse](concepts) for may 2017
+    - [show](get_command) [gp]{"entity": "metric", "value": "Gross Profit"} for [Non-LFL]{"entity": "LFL_or_Non_LFL", "value": "Non-LFL"} stores
+    - what was the [sales](metric) [budget achievement]{"entity": "calculated_metric", "value":"Budget Achievement"} for [converse]{"entity": "concepts", "value": "converse"} this year?
+    - how much of the [COGS]{"entity": "metric", "value": "COGS"} [budget was achieved]{"entity": "calculated_metric", "value":"Budget Achievement"} for [puma](concepts) in july last year
+    - [sales](metric) [achievement]{"entity": "calculated_metric", "value": "Budget Achievement"} for [converse](concepts) in september 2017
+    - what is the [gm] {"entity": "metric", value: "Gross Margin"} [per day per sqft]{"entity": "calculated_metric", "value":"PSF"} for [nike] (concepts)?
+    - show [total sales](metric) [PD PSF]{"entity": "calculated_metric"} for [nike](concepts)? 
+    - get me the [growth](calculated_metric) for [converse](concepts) [Non-LFL](LFL_or_Non_LFL) [total sales revenue](metric) in [UAE](territory) in march 2018
+    - [growth](calculated_metric) of [converse](concepts) [sales](metric) for [mall](store_subtype) stores in [Cairo](sub_region) for july 2020
+    - [converse](concepts) [sales](metric) [growth](calculated_metric) in [KSA](territory) for may 2017
+    - [growth](calculated_metric) of [converse](concepts) [sales](metric) in [bahrain](territory) for july 2020
+    - [vans](concepts) [ecommerce](store_subtype) [growth](calculated_metric) in [UAE](territory) between january and february 2018
+    - [growth](calculated_metric) in [COGS](metric) for [standalone](store_subtype) stores in [Bahrain](territory) and [UAE](territory) last year
+    - By what percentage did [vans](concepts) [COGS](metric) [grow](calculated_metric) this year
+    - [growth](calculated_metric) in [ecommerce](store_subtype) [gross margin](metric) for may 2019
+    - [growth](calculated_metric) for [UAE](territory) and [Qatar](territory) [sales revenue](metric) in june 2017
+    - how much did [converse](concepts) [COGS](metric) [grow](calculated_metric) in may 2019
+    - what was [vans](concepts) [sales](metric) [growth](calculated_metric) between january and february 2018
+
+- intent: store_rank_by_metric
+  examples: |
+    - present the [8](store_number) [worst]{"entity": "superlative", "value": "worst"} [LFL](LFL_or_Non_LFL) stores by [sales](metric) in [Ibri](sub_region) in may 2019
+    - show me [11](store_number) performing stores by [Budgeted COGS](metric) in [Bahrain](territory) for [converse](concepts) in june 2018
+    - [rank](rank_command) the [best]{"entity": "superlative", "value": "best"} [five](store_number) stores by [gross margins](metric) in the [UAE](territory) for dec 2017
+    - [list](rank_command) the [Worst]{"entity": "superlative", "value": "worst"} [ten](store_number) [puma](concepts) [standalone](store_subtype) stores for may 2020 by [gp](metric)
+    - [Worst]{"entity": "superlative", "value": "worst"} [10](store_number) [nike](concepts) stores in [UAE](territory) for march 2019
+    - What were the [five](store_number) stores by [sales revenue](metric) for may 2020
+    - [rank](rank_command) stores by [sales](metric) for [2019](year_extract)
+    - [rank](rank_command)
+    - [list](rank_command)
+    - [rank](rank_command) [top](superlative) [eleven](store_number) stores for [vans](concepts) [uae](territory) last year
+    - [classify](rank_command) the [worst]{"entity": "superlative", "value": "worst"} stores by [COGS](metric)
+    - [bottom]{"entity": "superlative", "value": "worst"} [three](store_number) stores by [sales](metric) for [vans](concepts) for today
+    - from may to june 2019, [top]{"entity": "superlative", "value": "best"} [eight](store_number) [budgeted gm](metric) for [nike](concepts)
+    - show [botom]{"entity": "superlative", "value": "worst"} [cogs]{"entity": "metric", "value": "COGS"} for [LFL](LFL_or_Non_LFL) stores in [bah](territory)
+    - [rank](rank_command) [best](superlative) [7](store_number) stores for [nike](concepts) and [adidas](concepts) [bah](territory) by [budgeted gm](metric) for last ramadan
+    - [bottom](superlative) [four](store_number) stores by [budgeted gp](metric) last month
+
+- intent: faq/filters_info
+  examples: |
+    - What filters are possible?
+    - Filters?
+    - Which categories can we filter on?
+    - filters info
+
+- intent: faq/concepts_info
+  examples: |
+    - List of concepts
+    - What concepts are there?
+    - Which concepts?
+    - concepts options
+    - concepts info
+
+- intent: faq/territory_info
+  examples: |
+    - List of territories
+    - Which territories are possible?
+    - Territory List
+    - What territories can be filtered on?
+    - territory options
+    - territory info
+    
+
+- intent: faq/brands_info
+  examples: |
+    - List of brands
+    - Brands
+    - Brands list
+    - Which brands can be filtered on?
+    - What are all the brands
+    - List brands
+    - brands options
+    - brands info
+  
+- intent: faq/LFL_info
+  examples: |
+    - What is LFL?
+    - LFL properties
+    - LFL options
+    - LFL info
+
+- intent: faq/CP_info
+  examples: |
+    - What is CP?
+    - CP properties
+    - CP options
+    - CP info
+
+- intent: faq/region_info
+  examples: |
+    - Which regions can we filter on?
+    - what are the possible regions?
+    - regions
+    - region list
+    - regions info
+
+- intent: faq/sub-region_info
+  examples: |
+    - Which sub-regions can we filter on?
+    - what are the possible sub-regions?
+    - subregions
+    - sub-regions list
+    - list of sub-regions
+    - sub-region info
+
+- intent: faq/store_type_info
+  examples: |
+    - What are the possible store types?
+    - List of store types
+    - store types list
+    - store type info
+
+- intent: faq/store_sub-type_info
+  examples: |
+    - What are the possible store sub types?
+    - List of store sub-types
+    - store sub-types list
+    - sub-types
+    - store sub-types info
+
+- intent: faq/metric_info
+  examples: |
+    - What are the possible metric?
+    - List of metrics
+    - metrics we can calculate
+    - metrics we can filter on
+    - which metrics are possible?
+    - metrics
+    - metrics info
+
+- intent: faq/dates_info
+  examples: |
+    - What dates are possible?
+    - date ranges valid?
+    - which dates can we filter on?
+    - dates info
